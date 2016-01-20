@@ -21,8 +21,8 @@ plugins {
 }
 */
 version = "1.8.9-0.0.1"
-group= "mod.yos.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "mc_lmr"
+group= "mod.yos.letsmodreboot" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "letsmodreboot"
 
 minecraft {
     version = "1.8.9-11.15.0.1710"
