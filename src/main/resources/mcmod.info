@@ -1,0 +1,17 @@
+[{
+    "modid": "LetsModReboot",
+    "name": "Lets Mod Reboot",
+    "description": "Test mod for Learning",
+    "version": "1.8.9-0.0.1",
+    "mcversion": "1.8.9",
+    "url": "https://github.com/yos314/mc_lmr",
+    "updateUrl": "",
+    "authors": [
+      "Yos"
+    ],
+    "credits": "Yos",
+    "logoFile": "",
+    "screenshots": [],
+    "parent":"",
+    "dependencies": []
+}]
