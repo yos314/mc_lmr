@@ -1,14 +1,16 @@
 package mod.yos.letsmodreboot;
 
+import mod.yos.letsmodreboot.handler.ConfigurationHandler;
 import mod.yos.letsmodreboot.proxy.IProxy;
 import mod.yos.letsmodreboot.reference.Reference;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION)
+@Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 
 public class LetsModReboot
 {
@@ -22,7 +24,8 @@ public class LetsModReboot
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     @Mod.EventHandler
