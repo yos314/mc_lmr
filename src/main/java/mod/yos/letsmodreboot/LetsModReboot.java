@@ -3,6 +3,7 @@ package mod.yos.letsmodreboot;
 import mod.yos.letsmodreboot.handler.ConfigurationHandler;
 import mod.yos.letsmodreboot.proxy.IProxy;
 import mod.yos.letsmodreboot.reference.Reference;
+import mod.yos.letsmodreboot.util.LogHelper;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -10,10 +11,9 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 
-public class LetsModReboot
-{
+public class LetsModReboot {
     @Mod.Instance(Reference.MOD_ID)
     public static LetsModReboot instance;
 
@@ -22,21 +22,19 @@ public class LetsModReboot
 
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
+    public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         MinecraftForge.EVENT_BUS.register(this);
+        LogHelper.info("***********Pre Initialization Complete");
     }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
-    {
-
+    public void init(FMLInitializationEvent event) {
+        LogHelper.info("***********Initialization Complete");
     }
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
-
+    public void postInit(FMLPostInitializationEvent event) {
+        LogHelper.info("***********Post Initialization Complete");
     }
 }
