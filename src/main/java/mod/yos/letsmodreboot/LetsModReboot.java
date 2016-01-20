@@ -1,4 +1,4 @@
-package mod.yos.mc_lmr;
+package mod.yos.letsmodreboot;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
