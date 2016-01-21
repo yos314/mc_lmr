@@ -22,7 +22,7 @@ plugins {
 }
 */
 version = "1.8.9-0.0.1"
-group= "mod.yos.letsmodreboot" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group= "yos.mod.letsmodreboot" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "letsmodreboot"
 
 minecraft {
