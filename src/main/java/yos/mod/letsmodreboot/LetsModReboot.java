@@ -1,6 +1,8 @@
 package yos.mod.letsmodreboot;
 
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import yos.mod.letsmodreboot.handler.ConfigurationHandler;
+import yos.mod.letsmodreboot.init.ModBlocks;
 import yos.mod.letsmodreboot.init.ModItems;
 import yos.mod.letsmodreboot.proxy.IProxy;
 import yos.mod.letsmodreboot.reference.Reference;
@@ -27,6 +29,7 @@ public class LetsModReboot {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         MinecraftForge.EVENT_BUS.register(this);
         ModItems.init();
+        ModBlocks.init();
 
         LogHelper.info("***********Pre Initialization Complete");
     }
