@@ -1,8 +1,8 @@
-package mod.yos.letsmodreboot.client.gui;
+package yos.mod.letsmodreboot.client.gui;
 
 
-import mod.yos.letsmodreboot.handler.ConfigurationHandler;
-import mod.yos.letsmodreboot.reference.Reference;
+import yos.mod.letsmodreboot.handler.ConfigurationHandler;
+import yos.mod.letsmodreboot.reference.Reference;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;

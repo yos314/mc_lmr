@@ -1,4 +1,4 @@
-package mod.yos.letsmodreboot.client.gui;
+package yos.mod.letsmodreboot.client.gui;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;

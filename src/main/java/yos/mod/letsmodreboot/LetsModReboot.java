@@ -1,9 +1,10 @@
-package mod.yos.letsmodreboot;
+package yos.mod.letsmodreboot;
 
-import mod.yos.letsmodreboot.handler.ConfigurationHandler;
-import mod.yos.letsmodreboot.proxy.IProxy;
-import mod.yos.letsmodreboot.reference.Reference;
-import mod.yos.letsmodreboot.util.LogHelper;
+import yos.mod.letsmodreboot.handler.ConfigurationHandler;
+import yos.mod.letsmodreboot.init.ModItems;
+import yos.mod.letsmodreboot.proxy.IProxy;
+import yos.mod.letsmodreboot.reference.Reference;
+import yos.mod.letsmodreboot.util.LogHelper;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -25,6 +26,8 @@ public class LetsModReboot {
     public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         MinecraftForge.EVENT_BUS.register(this);
+        ModItems.init();
+
         LogHelper.info("***********Pre Initialization Complete");
     }
 

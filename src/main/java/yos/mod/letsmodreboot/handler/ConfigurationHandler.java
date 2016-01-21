@@ -1,7 +1,7 @@
-package mod.yos.letsmodreboot.handler;
+package yos.mod.letsmodreboot.handler;
 
 
-import mod.yos.letsmodreboot.reference.Reference;
+import yos.mod.letsmodreboot.reference.Reference;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

@@ -1,4 +1,4 @@
-package mod.yos.letsmodreboot.proxy;
+package yos.mod.letsmodreboot.proxy;
 
 
 public class ServerProxy extends CommonProxy {

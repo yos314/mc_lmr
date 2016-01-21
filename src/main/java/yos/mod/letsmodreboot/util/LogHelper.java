@@ -1,6 +1,6 @@
-package mod.yos.letsmodreboot.util;
+package yos.mod.letsmodreboot.util;
 
-import mod.yos.letsmodreboot.reference.Reference;
+import yos.mod.letsmodreboot.reference.Reference;
 import net.minecraftforge.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 
