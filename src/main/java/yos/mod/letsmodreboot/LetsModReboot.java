@@ -31,11 +31,13 @@ public class LetsModReboot {
         ModItems.init();
         ModBlocks.init();
 
+
         LogHelper.info("***********Pre Initialization Complete");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        this.proxy.init();
         LogHelper.info("***********Initialization Complete");
     }
 
