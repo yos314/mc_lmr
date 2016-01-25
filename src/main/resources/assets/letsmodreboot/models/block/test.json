@@ -1,7 +1,7 @@
 {
   "textures": {
-    "0": "git blocks/barrelside16filled",
-    "1": "blocks/barrelend16"
+    "0": "letsmodreboot:blocks/barrel_side",
+    "1": "letsmodreboot:blocks/barrel_end"
   },
   "elements": [
     {
