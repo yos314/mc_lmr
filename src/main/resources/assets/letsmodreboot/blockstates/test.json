@@ -1,8 +1,8 @@
 {
   "forge_marker": 1,
-  "defaults": {
+  "variants": {
     "normal": {
-      "model": "letsmodreboot:block/test"
+      "model": "letsmodreboot:test"
     }
   }
 }
