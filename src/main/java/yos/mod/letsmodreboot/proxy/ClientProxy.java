@@ -5,17 +5,16 @@ import yos.mod.letsmodreboot.init.ModItems;
 
 public class ClientProxy extends CommonProxy {
     @Override
-    public static void preInit() {
-
+    public void preInit() {
     }
 
     @Override
-    public static void init(){
+    public void init(){
         ModItems.registerItemRenderer();
     }
 
     @Override
-    public static void postInit(){
+    public void postInit(){
 
     }
 }
