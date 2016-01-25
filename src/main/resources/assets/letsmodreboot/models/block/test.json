@@ -1,11 +1,11 @@
 {
   "textures": {
-    "0": "letsmodreboot:blocks/barrel_side",
-    "1": "letsmodreboot:blocks/barrel_end"
+    "0": "blocks/log_oak",
+    "1": "blocks/log_oak_top"
   },
   "elements": [
     {
-      "name": "Cube",
+      "name": "normal",
       "from": [ 1.0, 2.0, 1.0 ],
       "to": [ 15.0, 14.0, 15.0 ],
       "faces": {
@@ -18,7 +18,7 @@
       }
     },
     {
-      "name": "Cube",
+      "name": "normal",
       "from": [ 2.0, 0.0, 2.0 ],
       "to": [ 14.0, 2.0, 14.0 ],
       "faces": {
@@ -31,7 +31,7 @@
       }
     },
     {
-      "name": "Cube",
+      "name": "normal",
       "from": [ 2.0, 14.0, 2.0 ],
       "to": [ 14.0, 16.0, 14.0 ],
       "faces": {
