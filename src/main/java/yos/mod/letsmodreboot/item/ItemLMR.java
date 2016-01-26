@@ -1,5 +1,6 @@
 package yos.mod.letsmodreboot.item;
 
+import yos.mod.letsmodreboot.creativetab.CreativeTabLMR;
 import yos.mod.letsmodreboot.reference.Reference;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -7,6 +8,7 @@ import net.minecraft.item.ItemStack;
 public class ItemLMR extends Item {
     public ItemLMR(){
         super();
+        this.setCreativeTab(CreativeTabLMR.LMR_TAB);
     }
 
     @Override
