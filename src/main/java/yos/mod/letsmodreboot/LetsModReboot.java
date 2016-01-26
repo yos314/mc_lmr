@@ -1,6 +1,6 @@
 package yos.mod.letsmodreboot;
 
-import net.minecraftforge.fml.common.FMLCommonHandler;
+
 import yos.mod.letsmodreboot.handler.ConfigurationHandler;
 import yos.mod.letsmodreboot.init.ModBlocks;
 import yos.mod.letsmodreboot.init.ModItems;
