@@ -4,6 +4,7 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 import yos.mod.letsmodreboot.handler.ConfigurationHandler;
 import yos.mod.letsmodreboot.init.ModBlocks;
 import yos.mod.letsmodreboot.init.ModItems;
+import yos.mod.letsmodreboot.init.ModRecipes;
 import yos.mod.letsmodreboot.proxy.IProxy;
 import yos.mod.letsmodreboot.reference.Reference;
 import yos.mod.letsmodreboot.util.LogHelper;
@@ -37,6 +38,7 @@ public class LetsModReboot {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        ModRecipes.init();
         this.proxy.init();
         LogHelper.info("***********Initialization Complete");
     }
